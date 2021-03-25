@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<head>
+     <!---- Font Awesome ----->
+
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+     <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/common.css">
+
+
+
+    <!-- Google Fonts  -->
+
+    <link href="https://fonts.googleapis.com/css?family=Montez|Roboto|Ubuntu+Mono&display=swap" rel="stylesheet">
+
+
+
+    <!-- Bootstrap for -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+       
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+       
+       </script>
+
+</head>
+<body>
+    <div class="header">
+        <div class="signin">
+            <button type="button" class="signinbutton" data-toggle="modal" data-target="#exampleModal"
+                id="sign-in--button">
+                Sign In
+            </button>
+            <button type="button" class="signinupbutton" data-toggle="modal" data-target="#exampleModalSignUp"
+            id="sign-up--button">
+            Sign Up
+        </button>
+        </div>
+        <!--Page Title & logo-->
+        <a id="pageTitle" class="logo-title">ScriBBler</a>
+        <p class="sub-heading">Explore, Imagine, Create</p>
+
+
+        <!-- Fade Modal-->
+        <div class="modal fade" id="exModal" tabindex="-1" role="dialog" aria-labelledby="exModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="exModalLabel"
+                            style="color:grey;font-family: 'Roboto', sans-serif;font-size: larger;">Welcome Back !!</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                   <!--Modal Body-->
+                    <div class="modal-body">
+                        <form>
+                             <!--form grouper username sign in-->
+                            <div class="form-grouper">
+                                <label for="exampleUsername">Username</label>
+                                <input type="text" placeholder="Enter your username" class="form-control" id="exampleUsername"
+                                style="background-color :#DCDCDCDC ;"
+                                    aria-describedby="usernamehelpp" 
+                                     required>
+                            </div>
+
+
+
+                             <!--form grouper password signin -->
+                            <div class="form-grouper">
+                                <label for="examplePassword1">Password</label>
+                                <input type="password"  placeholder="Enter your Password!!!" class="form-control" id="examplePassword1" 
+                                style="background-color :#DCDCDCDC ;"
+                                      required>
+                            </div>
+                            <div class="modal-signin-container">
+                                <button type="submit" class="btn btn-success btn-block">Sign-In</button>
+                            </div>
+                            <div class="  modal-footer border-top-2 d-flex justify-content-center ">
+                                Not a member ? <a data-target="#exModalSignUp" data-dismiss="modal"
+                                    data-toggle="modal" href="#signup-form"> Sign Up</a>
+                            </div>
+                        </form>     
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+  <!-- Modal fade -->
+  <div class="modal fade" id="exampleModalSignUp" tabindex="-2" role="dialog" aria-labelledby="exModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h4 class="modal-title" id="exModalLabel"
+                  style="color:grey;font-family: 'Roboto', sans-serif;font-size: larger;">Get Started</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+
+
+            <form>
+<!--Form grouper Name-->
+                <div class="form-grouper">
+                    <label for="name">Name</label>
+                    <input type="text"  style="background-color : 	#DCDCDCDC ;" class="form-control" id="name" placeholder="Enter your name!!!"
+                         required>
+
+                </div>
+                <!--Form grouper Username-->
+                <div class="form-grouper">
+                    <label for="exampleUsername1">Username</label>
+                    <input type="text"   style="background-color :#DCDCDCDC ;" class="form-control" id="exampleUsername1"
+                        aria-describedby="emailHelpp" placeholder="Enter your username!!!"
+                         required>
+                </div>
+                   <!--Form grouper password-->
+                <div class="form-grouper">
+                    <label for="examplePassword1">Password</label>
+                    <input type="password" class="form-control" style="background-color :#DCDCDCDC ;" id="examplePassword1"
+                        placeholder="Enter your password!!!"  required>
+                </div>
+                 <!--Form grouper Confirm password-->
+                <div class="form-grouper">
+                    <label for="examplePassword1">Confirm Password</label>
+                    <input type="password" class="form-control" id="examplePassword2"
+                        placeholder="Re-enter your Password!!!" style="background-color :#DCDCDC ;" required>
+                </div>
+<!--submit sign up button-->
+                <div class="modal-signin-container">
+                    <button type="submit" class="btn btn-success btn-block">Sign Up</button>
+                </div>
+
+            </form>
+
+
+        </div>
+    </div>
+</div>
+</div>
+</div>
+   
+            
+
+
+
+
+
+
+
+</body>
+</html>
