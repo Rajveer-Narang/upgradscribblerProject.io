@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Font Awesome  -->
+    <!--Include Google Fonts -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy|Roboto|Marck+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+        type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../style/header.css" />
+    <link rel="stylesheet" type="text/css" href="../style/bloglist.css">
+
+
+</head>
+
+<body>
+    <!-- code for header  -->
+    <div class="header">
+        <div class="bg-signin">
+            <button type="button" class="signinbutton" data-toggle="modal" data-target="#exModal"
+                id="sign-in-button">
+                Sign In
+            </button>
+
+            <button type="button" class="signinbutton" data-toggle="modal" data-target="#exModalSignUp"
+                id="sign-up-button">
+                Sign Up
+            </button>
+        </div>
+
+        <a id="pageHeading" class="logo-title" a href="../index.html">ScriBBler</a>
+        <p class="smaller-heading">Explore, Imagine, Create</p>
+        <!-- Modal -->
+        <div class="modal fade" id="exModal" tabindex="-1" role="dialog" aria-labelledby="exModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="exModalLabel"
+                            style="color:grey;font-family: 'Roboto', sans-serif;font-size: larger;">Welcome Back !</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-grouper">
+                                <label for="exInputUsername">Username</label>
+                                <input type="text" class="form-control" id="InputUsername"
+                                    aria-describedby="usernameHelpp" placeholder="Enter your username!!!"
+                                    style="background-color :#DCDCDC ;" required>
+                            </div>
+                            <div class="form-grouper">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exInputPassword1"
+                                    placeholder="Enter your password!!!" style="background-color :#DCDCDC ;" required>
+                            </div>
+                            <div class="modal-signin-container">
+                                <button type="submit" class="btn btn-success btn-block">Sign In</button>
+                            </div>
+                            <div class="modal-footer border-top-0 d-flex justify-content-center">
+                                Not a member ? <a data-target="#exModalSignUp" data-dismiss="modal"
+                                    data-toggle="modal" href="#signup-form"> Sign Up</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exModalSignUp" tabindex="-1" role="dialog" aria-labelledby="exModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="exModalLabel"
+                            style="color:grey;font-family: 'Roboto', sans-serif;font-size: larger;">Get Started</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+
+                            <div class="form-grouper">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name!!!"
+                                    style="background-color : 	#DCDCDC ;" required>
+
+                            </div>
+                            <div class="form-grouper">
+                                <label for="exInputUsername1">Username</label>
+                                <input type="text" class="form-control" id="exInputUsername1"
+                                    aria-describedby="emailHelpp" placeholder="Enter your username!!!"
+                                    style="background-color :#DCDCDC ;" required>
+                            </div>
+                            <div class="form-grouper">
+                                <label for="exInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Enter your password!!!" style="background-color :#DCDCDC ;" required>
+                            </div>
+                            <div class="form-grouper">
+                                <label for="exInputPassword1">Confirm Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword2"
+                                    placeholder="Re-enter your Password!!!" style="background-color :#DCDCDC ;" required>
+                            </div>
+
+                            <div class="modal-signin-container">
+                                <button type="submit" class="btn btn-success btn-block">Sign Up</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- all posts starts -->
+
+    <div class="container">
+
+        <!--post 1-->
+
+
+        <div class="cardn" id="card100">
+
+            <div class="side-square-wrapper">
+                <span class="side-square-wrapper-content" id="auth100"> Jimi</span>
+
+            </div>
+            
+            <div class="custom-card-body">
+                <div>
+                    <div class="card-body-heading">
+                        <span class="card-body-head-content" id="head100">Hello there! This is Post 1.
+                            </span>
+                        <span class="trash-button" data-toggle="modal" data-target="#modalConfirmYesNo1">
+                            <!--  Font Awesome icon  delete icon  -->
+                            <i class="fa fa-trash fa-lg"></i>
+                        </span>
+                    </div>
+
+                </div>
+                <div class="post-text" id="cnt100">Jimi Hendrix was argubaly the greatest Instrumentalist in the history 
+                    of rock music[1].Hendrix expanded the range and vocabulary of the electric guitar into areas no musican had.
+                    </div>
+
+                <!--Font Awesome icon  horizontal ellipsis -->
+                <span class="ellipsis" onclick="openPost(auth100,head100,cnt100)">
+
+                    <i style="font-size:24px" class="fa">&#xf141;</i>
+                </span>
+
+            </div>
+            <!--- Delete card modal-->
+            <div id="modalConfirmYesNo1" class="modal fade">
+                <div class="modal-dialog " style="height: 15px; width:350px;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 id="lblTitleConfirmYesNo" class="modal-title" style="font-size: 15px;">
+                                Are you sure you want to delete this post?</h4>
+
+                        </div>
+   <!--- Delete card buttons-->
+                        <div class="modal-footer">
+                            <button id="btnYesConfirm" type="button" class="btn btn-danger"
+                                style="margin-right: 200px;">Yes</button>
+                            <button id="btnNoConfirmYesNo" type="button" class="btn btn-success"
+                                data-dismiss="modal">No</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+       
+
+         <!--post 2-->
+
+        <div class="cardn" id="card200">
+
+            <div class="side-square-wrapper">
+                <span class="side-square-wrapper-content" id="auth200"> Jimi</span>
+            </div>
+            <div class="custom-card-body">
+                <div>
+                    <div class="card-body-heading">
+                        <span class="card-body-head-content" id="head200">Hello there! This is Post 2.</span>
+                        <span class="trash-button" data-toggle="modal" data-target="#modalConfirmYesNo2">
+                            <!-- TODO: Include Font Awesome icon for delete icon here -->
+                            <i class="fa fa-trash fa-lg"></i>
+                        </span>
+                    </div>
+
+                </div>
+                <div class="post-text" id="cnt200">Jimi Hendrix was argubaly the greatest Instrumentalist in the history 
+                    of rock music[1].Hendrix expanded the range and vocabulary of the electric guitar into areas no musican had.</div>
+
+
+                <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                <span class="ellipsis" onclick="openPost(auth200,head200,cnt200)">
+                    <i style="font-size:24px" class="fa">&#xf141;</i>
+                </span>
+
+            </div>
+            <!--- Delete card modal-->
+            <div id="modalConfirmYesNo2" class="modal fade">
+                <div class="modal-dialog " style="height: 15px; width:350px;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 id="lblTitleConfirmYesNo" class="modal-title" style="font-size: 15px;">
+                                Are you sure you want to delete this post?</h4>
+
+                        </div>
+<!--- Delete card buttons-->
+                        <div class="modal-footer">
+                            <button id="btnYesConfirm" type="button" class="btn btn-danger"
+                                 style="margin-right: 200px;">Yes</button>
+                            <button id="btnNoConfirmYesNo" type="button" class="btn btn-success"
+                                data-dismiss="modal">No</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        
+
+        <!--post 3-->
+
+
+        <div class="cardn" id="card300">
+
+            <div class="side-square-wrapper">
+                <span class="side-square-wrapper-content" id="auth300">
+                    Jimi
+                </span>
+            </div>
+            <div class="custom-card-body">
+                <div>
+                    <div class="card-body-heading">
+                        <span class="card-body-head-content" id="head300">Hello there! This is Post 3.</span>
+                        <span class="trash-button" data-toggle="modal" data-target="#modalConfirmYesNo3">
+                            <!-- TODO: Include Font Awesome icon for delete icon here -->
+                            <i class="fa fa-trash fa-lg"></i>
+                        </span>
+                    </div>
+
+                </div>
+                <div class="post-text" id="cnt300">Jimi Hendrix was argubaly the greatest Instrumentalist in the history 
+                    of rock music[1].Hendrix expanded the range and vocabulary of the electric guitar into areas no musican had.</div>
+
+                <!--  Font Awesome icon  horizontal ellipsis icon -->
+                <span class="ellipsis" onclick="openPost(auth300,head300,cnt300)">
+                    <i style="font-size:24px" class="fa">&#xf141;</i>
+                </span>
+
+            </div>
+            <!--- Delete card modal-->
+            <div id="modalConfirmYesNo3" class="modal fade">
+                <div class="modal-dialog " style="height: 15px; width:350px;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 id="lblTitleConfirmYesNo" class="modal-title" style="font-size: 15px;">
+                                Are you sure you want to delete this post?</h4>
+
+                        </div>
+                        <!--- Delete card buttons-->
+
+                        <div class="modal-footer">
+                            <button id="btnYesConfirm" type="button" class="btn btn-danger"
+                                style="margin-right: 200px;">Yes</button>
+                            <button id="btnNoConfirmYesNo" type="button" class="btn btn-success"
+                                data-dismiss="modal">No</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+      
+        <!--post 4-->
+
+
+        <div class="cardn" id="card400">
+
+            <div class="side-square-wrapper">
+                <span class="side-square-wrapper-content" id="auth400">
+                    Jimi
+                </span>
+            </div>
+            <div class="custom-card-body">
+                <div>
+                    <div class="card-body-heading">
+                        <span class="card-body-head-content" id="head400">Hello there! This is Post 4.</span>
+                        <span class="trash-button" data-toggle="modal" data-target="#modalConfirmYesNo4">
+                            <!--Font Awesome icon delete icon -->
+                            <i class="fa fa-trash fa-lg"></i>
+                        </span>
+                    </div>
+
+                </div>
+                <div class="post-text" id="cnt400">Jimi Hendrix was argubaly the greatest Instrumentalist in the history 
+                    of rock music[1].Hendrix expanded the range and vocabulary of the electric guitar into areas no musican had.</div>
+
+                <!-- Font Awesome icon for horizontal ellipsis icon -->
+                <div class="ellipsis" onclick="openPost(auth400,head400,cnt400)">
+                    <i style="font-size:24px" class="fa">&#xf141;</i>
+                </div>
+
+            </div>
+            <!--- Delete card modal-->
+            <div id="modalConfirmYesNo4" class="modal fade">
+                <div class="modal-dialog " style="height: 15px; width:350px;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 id="lblTitleConfirmYesNo" class="modal-title" style="font-size: 15px;">Are you sure you
+                                want to delete this post?</h4>
+
+
+                        </div>
+<!--- Delete card buttons-->
+                        <div class="modal-footer">
+                            <button id="btnYesConfirm" type="button" class="btn btn-danger"
+                                style="margin-right: 200px;" >Yes</button>
+                            <button id="btnNoConfirmYesNo" type="button" class="btn btn-success"
+                                data-dismiss="modal">No</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        
+        <!--post 5-->
+
+
+        <div class="cardn" id="card500">
+
+            <div class="side-square-wrapper">
+                <span class="side-square-wrapper-content" id="auth500">
+                    Jimi
+                </span>
+            </div>
+            <div class="custom-card-body">
+                <div>
+                    <div class="card-body-heading">
+                        <span class="card-body-head-content" id="head500">Hello there! This is Post 5.</span>
+                        <span class="trash-button" data-toggle="modal" data-target="#modalConfirmYesNo5">
+                            <!--  Font Awesome icon  delete icon -->
+                            <i class="fa fa-trash fa-lg"></i>
+                        </span>
+                    </div>
+
+                </div>
+                <div class="post-text" id="cnt500">Jimi Hendrix was argubaly the greatest Instrumentalist in the history 
+                    of rock music[1].Hendrix expanded the range and vocabulary of the electric guitar into areas no musican had.</div>
+
+                <!--  Font Awesome icon  horizontal ellipsis icon  -->
+                <span class="ellipsis" onclick="openPost(auth500,head500,cnt500)">
+                    <i style="font-size:24px" class="fa">&#xf141;</i>
+                </span>
+
+            </div>
+            <!--- Delete card modal-->
+            <div id="modalConfirmYesNo5" class="modal fade">
+                <div class="modal-dialog " style="height: 15px; width:350px;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 id="lblTitleConfirmYesNo" class="modal-title" style="font-size: 15px;">Are you sure you
+                                want to delete this post?</h4>
+
+
+                        </div>
+<!--- Delete card buttons-->
+                        <div class="modal-footer">
+                            <button id="btnYesConfirm" type="button" class="btn btn-danger"
+                                style="margin-right: 200px;">Yes</button>
+                            <button id="btnNoConfirmYesNo" type="button" class="btn btn-success"
+                                data-dismiss="modal">No</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        
+
+    </div>
+    <!-- all posts ends  -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+       
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+       
+    <script src="../scripts/bloglist.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+body{
+   
+     bottom:0;
+     position : relative;
+}
+
+.heading-content{
+   text-align: center;
+   font-weight: bolder;
+   font-size: 25px;
+}
+
+.author{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.author-name{
+       /*Author view css*/
+    font-family: 'Courier New', Courier, monospace;
+    width: 50%;
+   font-weight: bold;
+   font-size: 20px;
+}
+
+#comments{
+    /*comment  view css id*/
+    background-color: lightgrey;
+    padding: 10px;
+    width: 100%;
+    margin: 10px;
+    
+}
+
+.comment{
+ /*comment  view css class*/
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    
+}
+
+#edit-button{
+     /*edit button  view css*/
+    margin-left: 500px;
+    float: right;
+    height: 40px;
+    width: 100px;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.post-content{
+    /*post  button  view css*/
+    word-wrap: break-word;
+    margin-top: 20px;
+}
+
+#like-button{
+    /*like button  view css*/
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100px;
+    padding: 5px;
+    border-radius: 2px;
+    height: 40px;
+   
+}
+
+#comment-button{
+    /*comment button  view css*/
+    margin-top: 20px;
+    width: 120px;
+    padding: 5px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    height: 40px;
+    
+}
+
+#showCount{
+    /*like count  view css*/
+    margin-bottom: 30px;
+
+}
+
+#allCommentsHeading{
+    /*comment heading view css*/
+    font-weight: bolder;
+    padding-top: 10px;
+}
+
+.comment-container{
+    /*comment container box  view css*/
+    overflow: hidden;
+    min-height: 0px;
+  
+}
