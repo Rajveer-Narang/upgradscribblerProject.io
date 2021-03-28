@@ -1,0 +1,40 @@
+#pageHeading{
+  /* logo css*/
+    font-family: 'Satisfy';
+    font-size: 50px;
+    color: #112fb4;
+    margin: auto;
+    text-decoration: none;
+    margin: 10px 10px 0px 10px;   
+   
+    }
+    
+    .smaller-heading {
+      /*sub heading css*/
+      font-family: 'Marck Script';
+      font-size: 22px;
+      margin-left: 10px;
+    }
+    
+    .modal-signin-container{
+      /*container signin css*/
+      border: 10px solid white;
+    }
+    
+    .signinbutton{
+      /*sign-in button css*/
+      width: 120px;
+      padding: 10px;
+      border-radius: 2px;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 90%;
+      background: #0000ff;
+      color: #fff;
+      float: right;                  
+      
+      margin: 10px 10px 0px 0px;
+      font-family: Arial, Helvetica, sans-serif;
+     }
+    
+    
