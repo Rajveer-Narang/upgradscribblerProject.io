@@ -17,6 +17,7 @@ This project is a frontend version that is based on blogging idea
  *Consists of Login and sign up options //from header.css
  * posts are contained in special tab boxes created using css
  --clicking on the delete button a modal is generated asking wether to delete or not 
+ clicking yes nothing happens on clicking , modal disappears when no is clicked
  --3 dot button when clicked redirects to post page
  
   # Post Page
