@@ -1,1 +1,0 @@
-1//modal script written in  index.html
